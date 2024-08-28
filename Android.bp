@@ -214,15 +214,6 @@ dex_import {
 	system_ext_specific: true,
 }
 
-prebuilt_etc {
-	name: "vendor.dolby.hardware.dms@2.0-service",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc",
-	filename_from_src: true,
-	sub_dir: "init",
-	soc_specific: true,
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "xiaomi",
@@ -286,21 +277,12 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-cc_prebuilt_binary {
+sh_binary {
 	name: "vendor.dolby.hardware.dms@2.0-service",
 	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
+	src: "proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service",
+	filename: "vendor.dolby.hardware.dms@2.0-service",
+	sub_dir: "hw",
 	soc_specific: true,
 }
 
