@@ -756,6 +756,7 @@ PRODUCT_PACKAGES += \
     libmialgo_video_enhance \
     libmialgo_video_seg \
     libmialgoengine \
+    libmialgoengine2 \
     libmibokeh_845_video \
     libmibokeh_855 \
     libminkdescriptor \
