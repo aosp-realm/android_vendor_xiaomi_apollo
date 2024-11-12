@@ -11655,6 +11655,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libwfdnative",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/system_ext/lib/libwfdnative.so"],
+			shared_libs: ["libandroid_runtime", "libui", "libinput", "libnativehelper", "libutils", "liblog", "libwfdclient", "libhidlbase", "libhidlmemory", "android.hidl.token@1.0-utils", "android.hardware.graphics.common@1.0", "android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "libandroidfw", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libwfdrtsp",
 	owner: "xiaomi",
 	strip: {
