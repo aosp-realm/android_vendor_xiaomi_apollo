@@ -370,6 +370,7 @@ PRODUCT_PACKAGES += \
     libllvm-glnext \
     libllvm-qcom \
     libmdsprpc \
+    libmmosal_vendor \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -434,7 +435,6 @@ PRODUCT_PACKAGES += \
     libhfp \
     liblistensoundmodel2 \
     libmm-hdcpmgr \
-    libmmosal_vendor \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
     libmulawdec \
@@ -1005,7 +1005,6 @@ PRODUCT_PACKAGES += \
     misound_karaoke_res \
     misound_karaokemix_res \
     misound_res \
-    com.qualcomm.qti.wifidisplayhal@1.0 \
     libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
@@ -1028,6 +1027,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.qti.hardware.wifidisplaysession@1.0 \
+    com.qualcomm.qti.wifidisplayhal@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1139,7 +1139,8 @@ PRODUCT_PACKAGES += \
     xtwifi-client \
     xtwifi-inet-agent \
     dpmd \
-    wfdservice
+    wfdservice \
+    wfdservice64
 
 PRODUCT_PACKAGES += \
     libEGL_adreno_libEGL_adreno_symlink32 \
